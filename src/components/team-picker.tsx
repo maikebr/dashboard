@@ -77,10 +77,12 @@ type TeamSwitcherProps = PopoverTriggerProps;
 export default function TeamSwitcher({ className }: TeamSwitcherProps) {
   const [open, setOpen] = React.useState(false);
   const [showNewTeamDialog, setShowNewTeamDialog] = React.useState(false);
-  const [selectedTeam, setSelectedTeam] = React.useState<Team>({
-    label: "CDS",
-    value: "cds",
-  });
+  const [selectedTeam, setSelectedTeam] = React.useState<Team>(
+    groups[0]?.teams[0] ?? {
+      label: "Firma Inc.",
+      value: "firma",
+    },
+  );
 
   return (
     <Dialog open={showNewTeamDialog} onOpenChange={setShowNewTeamDialog}>
@@ -99,7 +101,7 @@ export default function TeamSwitcher({ className }: TeamSwitcherProps) {
                 src={`https://avatar.vercel.sh/${selectedTeam.value}.png`}
                 alt={selectedTeam.label}
               />
-              <AvatarFallback>SC</AvatarFallback>
+              <AvatarFallback>MM</AvatarFallback>
             </Avatar>
             {selectedTeam.label}
             <CaretSortIcon className="ml-auto h-4 w-4 shrink-0 opacity-50" />
@@ -127,7 +129,7 @@ export default function TeamSwitcher({ className }: TeamSwitcherProps) {
                           alt={team.label}
                           className="grayscale"
                         />
-                        <AvatarFallback>SC</AvatarFallback>
+                        <AvatarFallback>MM</AvatarFallback>
                       </Avatar>
                       {team.label}
                       <CheckIcon

@@ -13,7 +13,7 @@ const MyApp: AppType = ({ Component, pageProps }) => {
       enableSystem
       disableTransitionOnChange
     >
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </ThemeProvider>
   );
 };

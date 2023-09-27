@@ -1,28 +1,32 @@
-# Create T3 App
+# Sales Dashboard Project
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+While I can't share code from my professional work, this public project serves as a showcase of my capabilities. My focus is on crafting a user-friendly interface with great UX/UI. In the future, I may consider adding dummy data to complete the backend.
 
-## What's next? How do I make an app with this?
+This Sales Dashboard project to train my proficiency in full-stack web development, utilizing TypeScript, React, Next.js, and Tailwind CSS. 
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+## Key Features
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+- **Responsive Design**: A mobile-friendly dashboard for easy access on all devices.
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+- **Data Visualization**: Visualize sales data with interactive charts and graphs.
 
-## Learn More
+- **Dynamic Routing**: Smooth navigation using Next.js dynamic routing.
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+- **TypeScript**: Enhances code quality and type safety.
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+- **Tailwind CSS**: Utilizes utility-first CSS for a polished UI.
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+## Technologies
 
-## How do I deploy this?
+- **Frontend**:
+  - React
+  - Next.js
+  - TypeScript
+  - Tailwind CSS
+  - Charting Libraries
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+- **Backend**:
+  - tRPC
+  - Prisma
+  - -NextAuth
+

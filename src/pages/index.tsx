@@ -11,7 +11,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { api } from "~/utils/api";
 
 export default function Home() {
-  // const hello = api.example.hello.useQuery({ text: "from tRPC" });
+  const hello = api.example.hello.useQuery({ text: "from tRPC" });
 
   return (
     <>
@@ -176,5 +176,5 @@ export default function Home() {
         </Tabs>
       </div>
     </>
-  );
+  )
 }

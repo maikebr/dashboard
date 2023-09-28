@@ -7,14 +7,18 @@ import {
   CardDescription,
 } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { CalendarDateRangePicker } from "~/components/date-picker";
 import { NavBar } from "~/components/nav-bar";
+import { Overview } from "~/components/overview";
+import { RecentSales } from "~/components/recent-sales";
+import { Search } from "~/components/search";
 import TeamPicker from "~/components/team-picker";
 import { UserNav } from "~/components/user-nav";
 
 import { api } from "~/utils/api";
 
 export default function Home() {
-  const hello = api.example.hello.useQuery({ text: "from tRPC" });
+  // const hello = api.example.hello.useQuery({ text: "from tRPC" });
 
   return (
     <>
@@ -24,7 +28,7 @@ export default function Home() {
             <TeamPicker />
             <NavBar className="mx-6" />
             <div className="ml-auto flex items-center space-x-4">
-              <p>Search</p>
+              <Search />
               <UserNav />
             </div>
           </div>
@@ -33,7 +37,6 @@ export default function Home() {
           <div className="flex items-center justify-between space-y-2">
             <h2 className="text-3xl font-bold tracking-tight">Dashboard</h2>
             <div className="flex items-center space-x-2">
-              <p>CalendarDateRangePicker</p>
               <Button className="hover:scale-105">Download</Button>
             </div>
           </div>
@@ -160,7 +163,7 @@ export default function Home() {
                     <CardTitle>Overview</CardTitle>
                   </CardHeader>
                   <CardContent className="pl-2">
-                    <p>Overview</p>
+                    <Overview />
                   </CardContent>
                 </Card>
                 <Card className="col-span-3">
@@ -171,7 +174,7 @@ export default function Home() {
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <p>Recent Sales</p>
+                    <RecentSales />
                   </CardContent>
                 </Card>
               </div>

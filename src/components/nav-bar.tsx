@@ -1,6 +1,6 @@
-import Link from "next/link"
+import Link from "next/link";
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 
 export function NavBar({
   className,
@@ -13,28 +13,28 @@ export function NavBar({
     >
       <Link
         href="/"
-        className="text-sm font-medium transition-colors hover:text-primary hover:scale-105"
+        className="text-sm font-medium transition-colors hover:scale-105 hover:text-primary"
       >
-        Overview
+        Payments
+      </Link>
+      <Link
+        href="/overtime"
+        className="text-sm font-medium text-muted-foreground transition-colors hover:scale-105 hover:text-primary"
+      >
+        Overtime
       </Link>
       <Link
         href="/"
-        className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary hover:scale-105"
-      >
-        Customers
-      </Link>
-      <Link
-        href="/"
-        className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary hover:scale-105"
+        className="text-sm font-medium text-muted-foreground transition-colors hover:scale-105 hover:text-primary"
       >
         Products
       </Link>
       <Link
         href="/"
-        className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary hover:scale-105"
+        className="text-sm font-medium text-muted-foreground transition-colors hover:scale-105 hover:text-primary"
       >
         Settings
       </Link>
     </nav>
-  )
+  );
 }

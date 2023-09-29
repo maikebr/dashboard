@@ -17,9 +17,9 @@ export function CalendarDateRangePicker({
 }: React.HTMLAttributes<HTMLDivElement>) {
   // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
   const [date, setDate] = React.useState<DateRange | undefined>({
-    from: new Date(2023, 0, 20),
+    from: new Date(2023, 8, 20),
     // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-call
-    to: addDays(new Date(2023, 0, 20), 20),
+    to: addDays(new Date(2023, 8, 20), 20),
   });
 
   return (

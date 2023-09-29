@@ -12,7 +12,7 @@ import { NavBar } from "~/components/nav-bar";
 import { Overview } from "~/components/overview";
 import { RecentSales } from "~/components/recent-sales";
 import { Search } from "~/components/search";
-import TeamPicker from "~/components/team-picker";
+import TeamSwitcher from "~/components/team-picker";
 import { UserNav } from "~/components/user-nav";
 
 import { api } from "~/utils/api";
@@ -25,7 +25,7 @@ export default function Home() {
       <div className="flex-col md:flex">
         <div className="border-b">
           <div className="flex h-16 items-center px-4">
-            <TeamPicker />
+            <TeamSwitcher />
             <NavBar className="mx-6" />
             <div className="ml-auto flex items-center space-x-4">
               <Search />
